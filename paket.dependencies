@@ -1,10 +1,5 @@
 source https://api.nuget.org/v3/index.json
-source https://www.nuget.org/api/v2/
-
-framework: auto-detect
-redirects: on
-
 nuget FSharp.Core
-nuget FAKE prerelease
+nuget FAKE
 nuget Unquote
 nuget Expecto

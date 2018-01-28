@@ -21,5 +21,11 @@ I'm especially interested in cKanren.
 
 For now, have a look at the tests for examples.
 
+## Building
+
+    source .env # ensure .net 4.6.1 can be compiled
+    ./build.sh # restore and build
+    dotnet restore # enable code completion in VSCode
+
  [core.logic]: https://github.com/clojure/core.logic
  [mk]: http://minikanren.org
