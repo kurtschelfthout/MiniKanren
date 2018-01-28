@@ -1,9 +1,3 @@
 #!/bin/bash
-if test "$OS" = "Windows_NT"
-then
-  # use .Net
-  packages/FAKE/tools/FAKE.exe $@ --fsiargs build.fsx 
-else
-  # use mono
-  mono packages/FAKE/tools/FAKE.exe $@ --fsiargs -d:MONO build.fsx 
-fi
+mono .paket/paket.exe restore
+mono packages/FAKE/tools/FAKE.exe $@ --fsiargs -d:MONO build.fsx
