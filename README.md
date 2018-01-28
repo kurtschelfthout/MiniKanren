@@ -27,5 +27,10 @@ For now, have a look at the tests for examples.
     ./build.sh # restore and build
     dotnet restore # enable code completion in VSCode
 
+# Run tests
+
+    cd FsLogic.Test/
+    dotnet run
+
  [core.logic]: https://github.com/clojure/core.logic
  [mk]: http://minikanren.org
